@@ -1,0 +1,250 @@
+/*
+Overwriting of styles.css
+*/
+
+/*
+News
+ */
+.coulrophobia-news-item {
+    margin-bottom: 30px;
+}
+
+.coulrophobia-news-header{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.coulrophobia-news-header h3{
+    font-size: 18px;
+}
+
+.coulrophobia-news-content{
+    margin-bottom: 5px;
+}
+
+.coulrophobia-news-content:after{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+.coulrophobia-news-footer {
+    clear: both;
+    padding: 5px 0 0 0;
+    border-top: 1px dashed #333;
+    color: #666;
+    font-size: 11px;
+    text-align: right;
+}
+
+
+.coulrophobia-news-img-wrap {
+	float: left;
+	margin: 3px 12px 5px 0;
+}
+
+
+/*
+Tourdates
+ */
+.coulrophobia-tourdate-list-item, .coulrophobia-tourdate-single-item  {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px dashed #767676;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.coulrophobia-tourdate-single-item h3 {
+    margin-top: 30px;
+}
+
+.coulrophobia-tourdate-title {
+    font-size: 20px;
+}
+.coulrophobia-tourdate-img-wrapper {
+    margin-top: 1px;
+    border-left: 2px solid;
+}
+
+.coulrophobia-tourdate-single-img-wrapper {
+    margin-right: 10px;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.coulrophobia-tourdate-img-wrapper a:hover img{
+    box-shadow: -1px 1px 8px #e2dc5a, 1px -1px 8px #e2dc5a;
+}
+
+.coulrophobia-tourdate-date-wrapper {
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.coulrophobia-tourdate-date-day {
+    font-size: 24px;
+}
+
+.coulrophobia-tourdate-date-month {
+    font-size: 15px;
+}
+
+.coulrophobia-tourdate-actionitem-wrapper {
+    font-size: 24px;
+    /*white-space: nowrap;*/
+    margin-top: 5px;
+
+}
+
+.coulrophobia-tourdate-actionitem {
+    margin: 0px 7px 0 7px;
+}
+
+
+
+
+/*Tooltips*/
+
+.tooltip.top .tooltip-inner {
+    background-color: #e2dc5a;
+    color: #000;
+    font-size: 15px;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: #e2dc5a;
+}
+
+/*Iconbar*/
+
+#iconbar{ top: 20px; right: 20px;}
+
+/*Navigation*/
+
+.navbar-default {
+     background-color: transparent;
+     border-color: transparent;
+     margin-bottom: 0px;
+}
+
+.navbar-collapse {
+    max-height: none;
+}
+
+@media(min-width:768px){
+     .navbar-collapse {
+        padding-left: 0px;
+    }
+}
+
+.navbar-default .navbar-nav li a {
+    color: #bcb759;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.open>a:focus{
+    color: #bcb759;
+    background-color: rgba(255,255,255,0.2);
+    text-shadow: none;
+}
+.navbar-default .dropdown-menu {
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0.8);
+}
+.navbar-default .dropdown-menu li a {
+
+    font-size: 18px;
+}
+
+.navbar-toggle {
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+
+/*Subpage with right Sidebar Navigation*/
+.sidbar-nav-box {
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.6);
+    margin-bottom: 12px;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidbar-nav-box img{
+    opacity: 0.5;
+}
+
+.sidbar-nav-box a{
+    color: #999;
+    text-shadow: none;
+}
+.sidbar-nav-box a:hover{
+    color: #bcb759;
+}
+
+.sidbar-nav-box:hover img{
+    opacity: 1;
+}
+
+#sidbar-nav-box-current img {
+    opacity: 1;
+}
+
+#sidbar-nav-box-current a {
+    opacity: 1;
+    color: #bcb759;
+}
+
+#sidbar-nav-box-current{
+    box-shadow: -1px 1px 8px #e2dc5a, 1px -1px 8px #e2dc5a;
+
+    opacity: 1;
+}
+
+
+.sidbar-nav-box .text-wrapper {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+}
+
+
+/* Responsive Youtube Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
