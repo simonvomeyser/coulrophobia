@@ -260,3 +260,7 @@ Tourdates
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
+
+.frontpage-sidebar-item {
+    margin-bottom: 25px;
+}
