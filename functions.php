@@ -126,8 +126,11 @@ function coulrophobia_scripts() {
 	//bootsrap
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array('jquery'), '', true);
 
+	//imagesloaded
+	wp_enqueue_script('imagesloaded-js', get_template_directory_uri() . '/js/imagesloaded.js', array('jquery'), '', true);
+
 	//own scripts, dependend on jquery so document ready is not nesc.
-	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), '', true);
+	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery','imagesloaded-js'), '', true);
 
 }
 
