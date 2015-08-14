@@ -248,3 +248,15 @@ Tourdates
     width: 100%;
     height: 100%;
 }
+
+#frontpage-sidebar h2{
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 5px;
+    color: #999;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
