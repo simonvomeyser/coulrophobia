@@ -27,7 +27,7 @@ get_header(); ?>
 
 	<?php else : ?>
 
-		<p>Nothing to do by now</p>
+		<p>404</p>
 
 	<?php endif; ?>
 

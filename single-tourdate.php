@@ -8,7 +8,7 @@ get_header();
 
 include_afc_maps(); //includes css and js in order for gmaps to work
 ?>
-
+<div class="col-xs-12">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<?php
 		$date = DateTime::createFromFormat('Ymd', get_field('date'));
@@ -51,5 +51,5 @@ include_afc_maps(); //includes css and js in order for gmaps to work
 		<a href="<?php bloginfo('url') ?>/tour">&laquo Zurück</a>
 	</div>
 
-
+	</div>
 <?php get_footer(); ?>

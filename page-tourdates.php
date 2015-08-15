@@ -5,7 +5,7 @@
  */
 
 get_header(); ?>
-
+<div class="col-xs-12">
 <?php if ( have_posts() ) : ?>
 
 	<?php /* Start the Loop */ ?>
@@ -50,6 +50,7 @@ get_header(); ?>
 			</div>
 		<?php endif; ?>
 	</div>
+</div>
 
 
 

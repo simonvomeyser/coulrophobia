@@ -165,9 +165,18 @@ require_once('wp_bootstrap_navwalker.php');
 function coulrophobia_widgets_init() {
 
 	register_sidebar( array(
+		'name'          => 'Default Sidbar',
+		'id'            => 'sidebar',
+		'before_widget' => '<div class="col-lg-12 col-md-6 col-xs-12">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
 		'name'          => 'Home right sidebar',
 		'id'            => 'home_right_1',
-		'before_widget' => '<div class="col-md-12 col-sm-6 col-xs-12 frontpage-sidebar-item">',
+		'before_widget' => '<div class="col-lg-12 col-md-6 col-xs-12 frontpage-sidebar-item text-center">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
@@ -193,3 +202,26 @@ function coulrophobia_widgets_init() {
 
 }
 add_action( 'widgets_init', 'coulrophobia_widgets_init' );
+
+
+
+//Woocommerce integration
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '
+  	<div class="col-12 col-lg-8">';
+}
+
+function my_theme_wrapper_end() {
+  echo '</div>';
+}
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}

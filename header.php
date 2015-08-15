@@ -71,17 +71,4 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
-<!-- 							wp_nav_menu(
-								array(
-									'menu'            => '',
-									'container'       => 'div',
-									'container_id'    => 'bs-example-navbar-collapse-2',
-									'container_class' => 'collapse navbar-collapse',
-									'menu_class'      => 'menu',
-									'theme_location'  => 'primary-menu',
-									'menu_class'      => 'nav navbar-nav',
-									'menu_id'         => '',
-									'depth'        	  => '3',
-									 )
-							);
- -->
+	<div class="row">

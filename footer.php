@@ -9,6 +9,8 @@
 
 ?>
 
+
+    </div><!-- .row -->
     </div><!-- #content container -->
 
     <footer id="colophon" class="site-footer container" role="contentinfo">
