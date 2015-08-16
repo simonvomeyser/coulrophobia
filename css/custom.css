@@ -206,6 +206,7 @@ Tourdates
 .navbar-toggle {
     box-shadow: none;
     margin-bottom: 10px;
+    outline-color: transparent;
 }
 
 
