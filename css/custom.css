@@ -62,7 +62,7 @@ Tourdates
 }
 
 .coulrophobia-tourdate-list-item-widget {
-    background-color: rgba(0,0,0,0.2);
+    background-color: transparent;
     padding: 5px;
     border: 1px dashed #333;
     color: #999;
@@ -287,5 +287,5 @@ Tourdates
 
 .frontpage-sidebar-item {
     margin-bottom: 30px;
-    overflow: hidden;
+    overflow: hidden; /*Because FB-Plugin adepts only on loading, not resizing*/
 }
