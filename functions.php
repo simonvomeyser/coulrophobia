@@ -87,7 +87,7 @@ add_action( 'after_setup_theme', 'coulrophobia_setup' );
 function coulrophobia_styles() {
 
 	//undersores.me, normalizing
-	wp_enqueue_style('underscores-styles', get_template_directory_uri() . '/css/underscores-styles.css');
+//	wp_enqueue_style('underscores-styles', get_template_directory_uri() . '/css/underscores-styles.css');
 
 	//oswald font
 	wp_enqueue_style('googlefonts-oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700');
