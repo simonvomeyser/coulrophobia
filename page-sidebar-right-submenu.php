@@ -7,7 +7,7 @@
 get_header(); ?>
 <div class="col-xs-12">
 
-    <h1>
+    <h1 class="no-top-margin">
         <?php
         if (get_post()->post_parent) {
            echo get_post(get_post()->post_parent)->post_title;

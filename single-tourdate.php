@@ -14,7 +14,7 @@ include_afc_maps(); //includes css and js in order for gmaps to work
 		$date = DateTime::createFromFormat('Ymd', get_field('date'));
 		$location = get_field('location');
 	?>
-	<h1>
+	<h1 class="no-top-margin">
 		<a href="<?php bloginfo('url') ?>/tour">Tour</a>
 	</h1>
 	<h2>

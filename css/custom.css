@@ -1,7 +1,19 @@
 /*
 Overwriting of styles.css
 */
+#logo img {
+    display: inline;
+}
 
+#trans-bg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
 /*
 News
  */
@@ -77,7 +89,7 @@ Tourdates
     cursor: pointer;
 }
 .coulrophobia-tourdate-list-item-widget .fa {
-    font-size: 8px;
+    font-size: 6px;
 }
 
 .coulrophobia-tourdate-single-item h3 {
@@ -285,7 +297,9 @@ Tourdates
     height: 100%;
 }
 
-#frontpage-sidebar h2{
+#frontpage-sidebar h2,
+#shop-sidebar-right h2
+{
     text-align: center;
     background-color: rgba(0,0,0,0.7);
     padding: 10px 5px;
@@ -298,7 +312,16 @@ Tourdates
     color: #CCC;
 }
 
-.frontpage-sidebar-item {
+.frontpage-sidebar-item,
+.shop-sidebar-item {
     margin-bottom: 30px;
     overflow: hidden; /*Because FB-Plugin adepts only on loading, not resizing*/
+}
+
+.shop-sidebar-item ul.product-categories{
+    list-style: none;
+}
+
+.no-top-margin {
+    margin-top: 0px;
 }
