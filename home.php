@@ -86,7 +86,7 @@ get_header(); ?>
 </div>
 <div class="col-12 col-lg-4" id="frontpage-sidebar">
 	<?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
-		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<div id="primary-sidebar" class="primary-sidebar widget-area">
 			<?php dynamic_sidebar( 'home_right_1' ); ?>
 		</div><!-- #primary-sidebar -->
 	<?php endif; ?>

@@ -298,8 +298,12 @@ Tourdates
 }
 
 #frontpage-sidebar h2,
-#shop-sidebar-right h2
+#shop-sidebar-right h2,
+#sidebar h2
 {
+}
+
+h2 {
     text-align: center;
     background-color: rgba(0,0,0,0.7);
     padding: 10px 5px;
@@ -318,10 +322,36 @@ Tourdates
     overflow: hidden; /*Because FB-Plugin adepts only on loading, not resizing*/
 }
 
-.shop-sidebar-item ul.product-categories{
-    list-style: none;
-}
 
 .no-top-margin {
     margin-top: 0px;
 }
+
+/* Shop */
+.shop-sidebar-item ul.product-categories{
+    list-style: none;
+}
+
+ul.product-categories li {
+   background-color: transparent;
+   padding: 5px;
+   border: 1px dashed #333;
+   color: #999;
+   text-align: center;
+   padding: 10px;
+   margin-bottom: 5px;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+
+    text-align: center;
+    background-color: #900000;
+}
+
