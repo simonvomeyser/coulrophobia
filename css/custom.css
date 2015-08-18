@@ -4,6 +4,9 @@ Overwriting of styles.css
 #logo img {
     display: inline;
 }
+a:hover, a:focus {
+    color: #FFF;
+}
 
 #trans-bg {
     position: absolute;
@@ -221,6 +224,10 @@ Tourdates
     outline-color: transparent;
 }
 
+input, button, div {
+    outline-color: transparent;
+}
+
 
 /*Subpage with right Sidebar Navigation*/
 .sidbar-nav-box {
@@ -355,3 +362,70 @@ ul.product-categories li {
     background-color: #900000;
 }
 
+input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    background-color: #900000;
+    color: #FFF;
+    text-shadow: -1px 1px 8px #e2dc5a, 1px -1px 8px #e2dc5a;
+
+}
+
+.products>.product:hover {
+    color: #FFF;
+}
+
+
+.description_tab .active {
+    background: #333;
+}
+
+.woocommerce .products ul, .woocommerce ul.products {
+    margin-top: 30px;
+}
+
+.woocommerce .woocommerce-breadcrumb a:hover {
+    color: #FFF;
+}
+
+.woocommerce a.remove:hover {
+    background: transparent;
+}
+
+dl.variation dt {
+    float:left;
+    font-weight: normal;
+}
+
+dl.variation {
+    margin-bottom: 0px;
+}
+
+dl.variation p{
+    margin-bottom: 0px;
+}
+
+
+.mini_cart_item {
+    background-color: rgba(0,0,0,0.5);
+    padding: 4px;
+    margin-bottom: 12px;
+    border: 1px dashed #767676;
+}
+.woocommerce a.remove {
+    color: #e2dc5a!important;;
+}
+
+
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-message {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.minicart-titlewrap,
+.minicart-quantitywrap {
+    font-weight: bold;
+    font-size: 1.3em;
+}

@@ -20,7 +20,7 @@ if ( $breadcrumb ) {
 
 		echo $before;
 		if ($crumb[0] == "Shop") {
-			$crumb[0] = "Produktübersicht";
+			$crumb[0] = "Produkte";
 		}
 
 		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {

@@ -10,7 +10,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+return;
 global $product, $woocommerce_loop;
 
 if ( empty( $product ) || ! $product->exists() ) {

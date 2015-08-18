@@ -224,6 +224,8 @@ echo '		<div class="col-xs-12">
 function my_theme_wrapper_end() {
 	echo '</div>';
 }
+add_action( 'woocommerce_before_shop_loop', 'wc_print_notices', 10 );
+add_action( 'woocommerce_before_single_product', 'wc_print_notices', 10);
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {

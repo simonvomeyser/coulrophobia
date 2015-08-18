@@ -13,7 +13,7 @@ get_header(); ?>
 			$posts_page = get_page( get_option( 'page_for_posts' ) );
 			echo apply_filters( 'the_content', $posts_page->post_content );
 		?>
-		<?php if ( have_posts('posts_per_page=2') ) : ?>
+		<?php if ( have_posts(array('posts_per_page'=>'2')) ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
