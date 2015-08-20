@@ -39,7 +39,7 @@ get_header(); ?>
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
 			<div class="coulrophobia-tourdate-list-item">
-				<?php get_template_part('/template_parts/page-tourdates-header') ?>
+				<?php get_template_part('content', 'tourdates-header') ?>
 			</div>
 
 			<?php endwhile; ?>

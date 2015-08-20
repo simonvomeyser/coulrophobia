@@ -21,7 +21,7 @@ include_afc_maps(); //includes css and js in order for gmaps to work
 		<?php the_title() ?>
 	</h2>
 	<div class="coulrophobia-tourdate-single-item" id="post-<?php the_ID(); ?>">
-		<?php get_template_part('/template_parts/page-tourdates-header') ?>
+		<?php get_template_part('content', 'tourdates-header') ?>
 		<div class="row">
 			<div class="col-xs-12">
 				<h3>Beschreibung</h3>
