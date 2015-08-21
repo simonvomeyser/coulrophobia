@@ -5,7 +5,8 @@
  */
 
 get_header(); ?>
-<div class="col-12 col-lg-8">
+<div class="col-xs-12"><h1 class="no-top-margin"><?php the_title(); ?></h1></div>
+<div class="col-lg-8">
     <div id="maincontent">
 		<?php if ( have_posts() ) : ?>
 

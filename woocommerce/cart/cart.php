@@ -22,12 +22,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 <table class="shop_table cart" cellspacing="0">
 	<thead>
 		<tr>
-			<th class="product-remove">&nbsp;</th>
 			<th class="product-thumbnail">&nbsp;</th>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 			<th class="product-price"><?php _e( 'Price', 'woocommerce' ); ?></th>
 			<th class="product-quantity"><?php _e( 'Quantity', 'woocommerce' ); ?></th>
 			<th class="product-subtotal"><?php _e( 'Total', 'woocommerce' ); ?></th>
+			<th class="product-remove">&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -42,17 +42,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 				?>
 				<tr class="<?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-					<td class="product-remove">
-						<?php
-							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s"><i class="fa fa-trash"></i></a>',
-								esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-								__( 'Remove this item', 'woocommerce' ),
-								esc_attr( $product_id ),
-								esc_attr( $_product->get_sku() )
-							), $cart_item_key );
-						?>
-					</td>
+
 
 					<td class="product-thumbnail">
 						<?php
@@ -110,6 +100,18 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<td class="product-subtotal">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
+						?>
+					</td>
+
+					<td class="product-remove">
+						<?php
+							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
+								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s"><i class="fa fa-trash"></i></a>',
+								esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
+								__( 'Remove this item', 'woocommerce' ),
+								esc_attr( $product_id ),
+								esc_attr( $_product->get_sku() )
+							), $cart_item_key );
 						?>
 					</td>
 				</tr>
