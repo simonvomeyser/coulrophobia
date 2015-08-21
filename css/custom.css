@@ -354,8 +354,8 @@ ul.product-categories li {
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
-.woocommerce input.button.alt {
-
+.woocommerce input.button.alt{
+    color: #FFF;
     text-align: center;
     background-color: #900000;
 }
@@ -364,10 +364,12 @@ input#submit.alt:hover,
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
-    background-color: #900000;
+    background-color: #971F1F;
     color: #FFF;
     text-shadow: -1px 1px 8px #e2dc5a, 1px -1px 8px #e2dc5a;
+}
 
+.btn:hover {
 }
 
 .products>.product:hover {
@@ -484,10 +486,16 @@ li.product a.hover>h3 {
     float: none;
 }
 
-.woocommerce table.shop_table thead tr{
-   background-color: rgba(0,0,0,0.6);
-   border: 1px dashed #333;
-   color: #CCC;
+.woocommerce table.shop_table tr th{
+    border: 1px solid #333;
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px 15px;
+    color: #999;
+    font-size: 16px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #CCC;
 }
 .woocommerce #respond input#submit,
 .woocommerce a.button,
@@ -502,6 +510,10 @@ td .quantity {
 
 .woocommerce input {
     padding: 10px;
+}
+
+.woocommerce input.qty {
+    padding: 5px;
 }
 
 .woocommerce-shipping-fields {
@@ -519,4 +531,34 @@ td .quantity {
 
 .woocommerce form.checkout_coupon p {
     margin: 0;
+}
+
+.woocommerce ul.products li.product a:hover>h3 {
+    color: #FFF;
+}
+
+.product_list_widget li.empty {
+    list-style: none;
+}
+
+.woocommerce-checkout #payment {
+    border-radius: 0px;
+    background: #E0DFE0;
+}
+
+.woocommerce-checkout #payment div.payment_box {
+    background: #CFCFCF;
+
+}
+.woocommerce-checkout #payment div.payment_box:after {
+    content: "";
+    display: block;
+    border: 8px solid #CFCFCF;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    margin: -1em 0 0 2em;
 }
