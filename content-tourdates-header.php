@@ -27,7 +27,7 @@ Template for a row with evrything in relation to an tourdate
 	</div>
 	<div class="col-sm-6 col-xs-9">
 		<span class="coulrophobia-tourdate-title">
-			<b><?php the_title(); ?> xyz</b>
+			<b><?php the_title(); ?></b>
 		</span>
 		<?php if($location['address']): ?>
 			<br/> <?php echo $location['address']; ?>
