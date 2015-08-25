@@ -6,6 +6,8 @@
 
 get_header(); ?>
 
+
+
 <div class="col-12 col-lg-8">
 	<div id="maincontent">
 		<?php

@@ -7,6 +7,10 @@
  * @package coulrophobia
  */
 
+if ($_COOKIE['iwashere'] != "yes") {
+	setcookie("iwashere", "yes", time()+315360000);
+}
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -21,6 +25,10 @@
 <body <?php body_class(); ?>>
 <div id="page" style="position:relative;" class="hfeed site">
 <div id="trans-bg" style="background-color: #<?php background_color(); ?>;"></div>
+
+<?php if ($_COOKIE['iwashere'] != "yes"): ?>
+		<div id="bg-fade-in" style="background-color: #<?php background_color(); ?>"></div>
+<?php endif ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
