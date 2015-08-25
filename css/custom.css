@@ -8,15 +8,23 @@ a:hover, a:focus {
     color: #FFF;
 }
 
-#trans-bg {
+#trans-bg,
+#bg-fade-in {
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     opacity: 0;
     top:0;
     bottom:0;
     left:0;
     right:0;
+    min-height: 100%;
+    min-width:100%;
 }
+#bg-fade-in {
+    opacity: 1;
+    z-index: -1;
+}
+
 /*
 News
  */
@@ -487,15 +495,14 @@ li.product a.hover>h3 {
 }
 
 .woocommerce table.shop_table tr th{
-    border: 1px solid #333;
-    background-color: rgba(0,0,0,0.9);
+    /*border-bottom: 1px solid #333;*/
+    /*background-color: rgba(0,0,0,0.9);*/
     padding: 10px 15px;
-    color: #999;
     font-size: 16px;
     margin: 0px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: #CCC;
+    color: #999;
 }
 .woocommerce #respond input#submit,
 .woocommerce a.button,
@@ -561,4 +568,68 @@ td .quantity {
     top: -3px;
     left: 0;
     margin: -1em 0 0 2em;
+}
+
+.woocommerce .order_details li {
+    float: left;
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-size: .9em;
+    line-height: 1;
+    border-right: 1px dashed #d3ced2;
+    padding: 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Bootstrap override */
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.panel-default {
+    border-color: #dddddd;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-default>.panel-heading {
+    border: 1px solid #333;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    padding: 10px 5px;
+    color: #999;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #CCC;
+}
+.panel-default>.panel-heading>h4 {
+    font-size: 18px;
+}
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.panel-default>.panel-heading+.panel-collapse .panel-body {
+    border-top: transparent;
+}
+.panel-body {
+     padding: 15px 0;
+}
+
+.panel-title>a>.fa {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+#accordion {
+    margin-bottom: 15px;
 }

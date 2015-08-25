@@ -15,8 +15,6 @@ get_header(); ?>
 
 	<?php endwhile; ?>
 
-	<?php the_posts_navigation(); ?>
-
 <?php endif; ?>
 
 	<?php
@@ -49,6 +47,12 @@ get_header(); ?>
 				Momentan keine aktuellen Tourdaten.
 			</div>
 		<?php endif; ?>
+
+		<div class="coulrophobia-tourdate-list-item">
+			<div class="text-right">
+				<a href="<?php bloginfo('url') ?>/tour/archiv"> Vergangene Tourdaten anzeigen <i class="fa fa-angle-double-right"></i></a>
+			</div>
+		</div>
 	</div>
 </div>
 
