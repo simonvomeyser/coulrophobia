@@ -27,9 +27,9 @@ include_afc_maps(); //includes css and js in order for gmaps to work
 				<h3>Beschreibung</h3>
 				<?php the_field('description') ?>
 				<h3>Zusammenfassung</h3>
-				<b>Name:</b>  <br/>
-				<b>Datum:</b> <a href="https://maps.google.com?q=<?php echo $location['address']; ?>" target='_blank'><?php echo $location['address']; ?></a> <br/>
-				<b>Adresse:</b> <a href="https://maps.google.com?q=<?php echo $location['address']; ?>" target='_blank'><?php echo $location['address']; ?></a> <br/>
+				<b>Name:</b>  <?php the_title(); ?><br/>
+				<b>Datum:</b> <?php echo date("d.m.Y", $date->getTimestamp()); ?> <br/>
+				<b>Adresse:</b> <?php echo $location['address']; ?>
 
 				<h3>Links</h3>
 				<b>Facebook:</b> <a href="<?php echo the_field('facebooklink') ?>" target='_blank'><?php echo the_field('facebooklink') ?></a> <br/>
