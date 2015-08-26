@@ -8,6 +8,10 @@ a:hover, a:focus {
     color: #FFF;
 }
 
+body.logged-in.admin-bar{
+   margin-top: 32px;
+}
+
 #trans-bg,
 #bg-fade-in {
     position: absolute;
@@ -184,14 +188,18 @@ Tourdates
      margin-bottom: 0px;
 }
 
+
 .navbar-collapse {
     max-height: none;
+    padding-left: 0;
 }
 
-@media(min-width:768px){
-     .navbar-collapse {
-        padding-left: 0px;
+
+@media(max-width:768px){
+    .navbar-collapse {
+        padding-left: 20px;
     }
+
 }
 
 .navbar-default .navbar-nav li a {
