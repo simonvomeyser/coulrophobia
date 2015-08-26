@@ -86,8 +86,8 @@ add_action( 'after_setup_theme', 'coulrophobia_setup' );
 
 function coulrophobia_styles() {
 
-	//undersores.me, normalizing
-//	wp_enqueue_style('underscores-styles', get_template_directory_uri() . '/css/underscores-styles.css');
+	//normalizing
+	wp_enqueue_style('normalizing-styles', get_template_directory_uri() . '/css/normalize.css');
 
 	//oswald font
 	wp_enqueue_style('googlefonts-oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700');
@@ -167,8 +167,8 @@ function coulrophobia_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Shop right sidbar',
 		'id'            => 'shop_sidebar_right',
-		'before_widget' => '<div class="col-lg-12 col-md-6 col-xs-12 shop-sidebar-item">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class=""><div class="shop-sidebar-item">',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
@@ -176,8 +176,8 @@ function coulrophobia_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Home right sidebar',
 		'id'            => 'home_right_1',
-		'before_widget' => '<div class="col-lg-12 col-md-6 col-xs-12 frontpage-sidebar-item text-center">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class=""><div class="frontpage-sidebar-item text-center">',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
@@ -220,7 +220,7 @@ echo '		<div class="col-xs-12">
 			</div>
 		</div>
 		<div class="row">
-		<div class="col col-lg-8">';
+		<div class="col-md-8">';
 }
 
 function my_theme_wrapper_end() {
@@ -238,11 +238,12 @@ function woocommerce_support() {
 
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
-// Our hooked in function - $fields is passed via the filter!
+/**
+ * Removes a few unnecessary fields
+ * @param  [type] $fields [description]
+ * @return [type]         [description]
+ */
 function custom_override_checkout_fields( $fields ) {
-	// echo "<pre>";
-	// echo var_dump($fields['billing']) . "<br/>";
-	// echo "</pre>";
 	unset($fields['billing']['billing_address_2']);
 	unset($fields['billing']['billing_company']);
 	unset($fields['billing']['billing_phone']);
@@ -250,3 +251,16 @@ function custom_override_checkout_fields( $fields ) {
 
 	return $fields;
 }
+
+function IE8Support() {
+
+	global $wp_scripts;
+
+	wp_register_script( 'html5_shiv', 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', '', '', false );
+	wp_register_script( 'respond_js', 'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js', '', '', false );
+
+	$wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
+	$wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
+
+}
+add_action( 'wp_enqueue_scripts', 'IE8Support' );
