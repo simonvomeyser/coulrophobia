@@ -8,7 +8,7 @@ get_header(); ?>
 
 
 
-<div class="col-12 col-lg-8">
+<div class="col-md-8">
 	<div id="maincontent">
 		<?php
 			//Gets the static content of the page too so the slider can be added
@@ -86,7 +86,7 @@ get_header(); ?>
 
 	</div>
 </div>
-<div class="col-12 col-lg-4" id="frontpage-sidebar">
+<div class="col-md-4" id="frontpage-sidebar">
 	<?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
 		<div id="primary-sidebar" class="primary-sidebar widget-area">
 			<?php dynamic_sidebar( 'home_right_1' ); ?>
