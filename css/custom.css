@@ -159,7 +159,7 @@ Tourdates
 }
 
 .coulrophobia-tourdate-actionitem {
-    margin: 0px 7px 0 7px;
+    margin: 0 7px 0 7px;
 }
 
 
@@ -185,7 +185,7 @@ Tourdates
 .navbar-default {
      background-color: transparent;
      border-color: transparent;
-     margin-bottom: 0px;
+     margin-bottom: 0;
 }
 
 
@@ -328,7 +328,7 @@ h2 {
     padding: 10px 5px;
     color: #999;
     font-size: 18px;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 10px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -343,7 +343,7 @@ h2 {
 
 
 .no-top-margin {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /* Shop */
@@ -427,11 +427,11 @@ dl.variation dt {
 }
 
 dl.variation {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 dl.variation p{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -507,7 +507,7 @@ li.product a.hover>h3 {
     /*background-color: rgba(0,0,0,0.9);*/
     padding: 10px 15px;
     font-size: 16px;
-    margin: 0px;
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #999;
@@ -557,7 +557,7 @@ td .quantity {
 }
 
 .woocommerce-checkout #payment {
-    border-radius: 0px;
+    border-radius: 0;
     background: #E0DFE0;
 }
 
@@ -593,7 +593,7 @@ td .quantity {
 /* Bootstrap override */
 .panel-group .panel {
     margin-bottom: 0;
-    border-radius: 0px;
+    border-radius: 0;
     overflow: hidden;
 }
 .panel-default {
@@ -603,7 +603,7 @@ td .quantity {
     margin-bottom: 20px;
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 0px;
+    border-radius: 0;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -613,7 +613,7 @@ td .quantity {
     text-align: center;
     padding: 10px 5px;
     color: #999;
-    margin: 0px;
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #CCC;
@@ -623,8 +623,8 @@ td .quantity {
 }
 .panel-heading {
     border-bottom: 1px solid transparent;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 .panel-default>.panel-heading+.panel-collapse .panel-body {
     border-top: transparent;
