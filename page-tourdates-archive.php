@@ -26,7 +26,8 @@ get_header(); ?>
 			'meta_value' 	=> $tomorrow,
 			'meta_compare'	=> '<',
 			'orderby'		=> 'meta_value_num',
-			'order'			=> 'DESC'
+			'order'			=> 'DESC',
+			'nopaging' 		=> TRUE
 			);
 		$query = new WP_Query($args);
 	?>
