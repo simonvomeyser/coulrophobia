@@ -64,18 +64,13 @@ get_header(); ?>
 					<div class="panel panel-default">
 					  <div class="panel-heading" role="tab" id="heading<?php echo $year ?>">
 					    <h4 class="panel-title">
-					      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $year ?>" aria-expanded="true" aria-controls="collapse<?php echo $year ?>">
-					      <?php if ($headingYear): ?>
-					        <li class="fa  fa-chevron-circle-right"></li>
-					      <?php else: ?>
+					      <a role="button" data-toggle="collapse" href="#collapse<?php echo $year ?>" aria-expanded="true" aria-controls="collapse<?php echo $year ?>">
 					        <li class="fa fa-chevron-circle-down"></li>
-					      <?php endif ?>
-
 					        <?php echo $year ?>
 					      </a>
 					    </h4>
 					  </div>
-					  <div id="collapse<?php echo $year ?>" class="panel-collapse collapse <?php if(!$headingYear) echo 'in'; ?>" role="tabpanel" aria-labelledby="heading<?php echo $year ?>">
+					  <div id="collapse<?php echo $year ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $year ?>">
 					    <div class="panel-body">
 
 
@@ -84,7 +79,7 @@ get_header(); ?>
 				<?php endif ?>
 
 				<div class="coulrophobia-tourdate-list-item">
-					<?php get_template_part('content', 'tourdates-header') ?>
+					<?php get_template_part('content', 'tourdates-header-archive') ?>
 				</div>
 
 				<?php endwhile; ?>
