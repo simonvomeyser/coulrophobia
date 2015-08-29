@@ -7,7 +7,7 @@ jQuery( document ).ready(function( $ ) {
 	window.onscroll = function () {
 		document.getElementById('trans-bg').style.opacity =
 		(window.pageYOffset * 0.001);
-	}
+	};
 
 	$('body').imagesLoaded().progress(function() {
 	    // All descendant images have loaded, now fade out (and image in).
@@ -19,11 +19,10 @@ jQuery( document ).ready(function( $ ) {
 	//Toggeling of font awesome chevrons in accordeon
 	$('#accordion').on('hide.bs.collapse', function (event) {
 		$(event.target).closest('.panel').find('.fa-chevron-circle-down').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-right');
-	})
+	});
 	$('#accordion').on('show.bs.collapse', function (event) {
 		$(event.target).closest('.panel').find('.fa-chevron-circle-right').removeClass('fa-chevron-circle-right').addClass('fa-chevron-circle-down');
-	})
-
+	});
 
 });
 
