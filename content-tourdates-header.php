@@ -15,7 +15,7 @@ $location = get_field('location');
 		</div>
 	</div>
 	<div class="col-sm-2 hidden-xs text-center">
-		<div class="coulrophobia-tourdate-img-wrapper" <?php if(get_the_post_thumbnail()): ?>data-toggle="tooltip" title="Flyer"<?php endif ?>>
+		<div class="coulrophobia-tourdate-img-wrapper" <?php if(get_the_post_thumbnail()): ?>data-toggle="tooltip" title="Flyer anzeigen"<?php endif ?>>
 			<?php if(get_the_post_thumbnail()): ?>
 				<a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="Flyer <?php the_title(); ?>" >
 					<?php the_post_thumbnail(array(50,50)); ?>
@@ -45,12 +45,12 @@ $location = get_field('location');
 				<?php endif; ?>
 			</span>
 			<span class="coulrophobia-tourdate-actionitem">
-				<?php if (get_field('location')): ?>
+				<?php if (!empty($location['address'])): ?>
 						<a href="https://maps.google.com?q=<?php echo $location['address']; ?>" target='_blank' title="Googlemaps Position">
 							<i class="fa fa-map-marker"></i>
 						</a>
 					<?php else: ?>
-					<i class="fa fa-marker"></i>
+					<i class="fa fa-map-marker"></i>
 				<?php endif; ?>
 			</span>
 			<span class="coulrophobia-tourdate-actionitem">
