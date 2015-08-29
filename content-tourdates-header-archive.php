@@ -8,10 +8,10 @@ $month = $date->format('M');
 $location = get_field('location');
 ?>
 <div class="row">
-	<div class="col-sm-2 col-xs-3">
+	<div class="col-sm-2 col-xs-12">
 	<?php echo $date->format('d.M.Y') ?>
 	</div>
-	<div class="col-sm-7 col-xs-9">
+	<div class="col-sm-7 col-xs-12">
 		<span class="coulrophobia-tourdate-title-archive">
 			<b><?php the_title(); ?></b>
 		</span>
@@ -21,39 +21,30 @@ $location = get_field('location');
 	</div>
 	<div class="col-sm-3 col-xs-12 text-right">
 		<span class="coulrophobia-tourdate-actionitem-archive">
+		<?php if(get_the_post_thumbnail()): ?>
+			<a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="Flyer <?php the_title(); ?>" >
+				Flyer
+			</a>
+		<?php else: ?>
+			Flyer
+		<?php endif; ?>
+		</span>
+		<span class="coulrophobia-tourdate-actionitem-archive">
 			<?php if (get_field('description')): ?>
-				<a href="<?php the_permalink() ?>" title="Details anzeigen">
-				    Details
+				| <a href="<?php the_permalink() ?>" title="Details anzeigen">
+					Details
 				</a>
 			<?php else: ?>
-				Details
+				| Details
 			<?php endif; ?>
 		</span>
-		<span class="coulrophobia-tourdate-actionitem">
+		<span class="coulrophobia-tourdate-actionitem-archive">
 			<?php if (!empty($location['address'])): ?>
 					| <a href="https://maps.google.com?q=<?php echo $location['address']; ?>" target='_blank' title="Googlemaps Position">
 						Ort
 					</a>
 				<?php else: ?>
 				| Ort
-			<?php endif; ?>
-		</span>
-		<span class="coulrophobia-tourdate-actionitem-archive">
-			<?php if (get_field('facebooklink')): ?>
-				| <a href="<?php the_field('facebooklink') ?>" target='_blank' title="Facebookseite des Veranstalters">
-					Facebook
-				</a>
-			<?php else: ?>
-				| Facebook
-			<?php endif; ?>
-		</span>
-		<span class="coulrophobia-tourdate-actionitem-archive">
-			<?php if (get_field('websitelink')): ?>
-				| <a href="<?php the_field('websitelink') ?>" target='_blank' title="Website des Veranstalters">
-					Website
-				</a>
-			<?php else: ?>
-				| Website
 			<?php endif; ?>
 		</span>
 
