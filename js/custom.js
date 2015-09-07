@@ -9,9 +9,8 @@ jQuery( document ).ready(function( $ ) {
 		(window.pageYOffset * 0.001);
 	};
 
-	$('body').imagesLoaded().progress(function() {
+	$('img').imagesLoaded().progress(function() {
 	    // All descendant images have loaded, now fade out (and image in).
-
 		$('#bg-fade-in').animate({opacity: 0}, 1000);
 	});
 
