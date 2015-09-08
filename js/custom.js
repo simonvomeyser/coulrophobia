@@ -9,11 +9,20 @@ jQuery( document ).ready(function( $ ) {
 		(window.pageYOffset * 0.001);
 	};
 
-	$('img').imagesLoaded().progress(function() {
-	    // All descendant images have loaded, now fade out (and image in).
-		$('#bg-fade-in').animate({opacity: 0}, 1000);
+	$('.fadeImageIn').each(function(){
+		$(this).css('opacity', 0);
 	});
 
+	imagesLoaded( document.querySelector('body'), function( instance ) {
+	 	$('.fadeImageIn').imagesLoaded().animate({opacity: 1}, 2000);
+		$('#bg-fade-in').animate({opacity: 0}, 1000);
+
+	});
+
+	// $('.fadeImageIn').imagesLoaded( function(e) {
+	//     // All descendant images have loaded, now fade out (and image in).
+	// 	$(e).animate({opacity: 1}, 1000);
+	// });
 
 	//Toggeling of font awesome chevrons in accordeon
 	$('#accordion').on('hide.bs.collapse', function (event) {
