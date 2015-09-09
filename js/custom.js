@@ -5,8 +5,7 @@ jQuery( document ).ready(function( $ ) {
 
 	//background hides while srolling down
 	window.onscroll = function () {
-		document.getElementById('trans-bg').style.opacity =
-		(window.pageYOffset * 0.001);
+		$('#trans-bg').css({'opacity': Math.sin(window.pageYOffset * 0.001)});
 	};
 
 	$('.fadeImageIn').each(function(){
@@ -14,7 +13,7 @@ jQuery( document ).ready(function( $ ) {
 	});
 
 	imagesLoaded( document.querySelector('body'), function( instance ) {
-	 	$('.fadeImageIn').imagesLoaded().animate({opacity: 1}, 2000);
+	 	$('.fadeImageIn').imagesLoaded().animate({opacity: 1}, 2500);
 		$('#bg-fade-in').animate({opacity: 0}, 1000);
 
 	});
