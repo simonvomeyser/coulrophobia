@@ -26,7 +26,7 @@ if ($_COOKIE['iwashere'] != "yes") {
 <div id="page" style="position:relative;" class="hfeed site">
 <div id="trans-bg" style="background-color: #<?php background_color(); ?>;"></div>
 
-<?php if ($_COOKIE['iwashere'] != "yes"): ?>
+<?php if ($_COOKIE['iwashere'] != "yes" && is_home()): ?>
 		<div id="bg-fade-in" style="background-color: #<?php background_color(); ?>"></div>
 <?php endif ?>
 
@@ -52,6 +52,7 @@ if ($_COOKIE['iwashere'] != "yes") {
 						  </button>
 						</div>
 						<?php
+
 
 
 						?>

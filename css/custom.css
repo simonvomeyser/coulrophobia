@@ -255,6 +255,11 @@ input, button, div {
 
 .nav-box-bg-img{
     opacity: 0.5;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .sidbar-nav-box a{
@@ -267,6 +272,7 @@ input, button, div {
 
 .sidbar-nav-box:hover img{
     opacity: 1;
+
 }
 
 #sidbar-nav-box-current img {
@@ -304,6 +310,15 @@ input, button, div {
 .imageWrapperBandmembers {
     opacity: 0.5;
 }
+
+.imageWrapperBandmembers {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
 .navbox-bandmembers:hover .imageWrapperBandmembers {
     opacity: 1;
 }
