@@ -37,7 +37,7 @@ get_header(); ?>
         <?php endif; ?>
     </div>
 </div>
-<div class="col-md-4 hidden-xs hidden-sm" id="sidebar">
+<div class="col-sm-12 col-md-4" id="sidebar">
 
     <?php
     /**
@@ -50,31 +50,31 @@ get_header(); ?>
     }
     $args = array(
         'child_of' => $parentPage->ID,
-        'sort_column' => 'post_date',
+        'sort_column' => 'post_modified',
         'parent' => -1,
         'post_type' => 'page',
         'post_status' => 'publish',
-        'sort_order' => 'desc'
+        'sort_order' => 'asc'
     );
     $pages = get_pages($args);
 
     ?>
     <?php foreach ($pages as $key => $singlePage): ?>
 
-        <div class="sidbar-nav-box navbox-bandmembers" <?php if(get_post()->ID===$singlePage->ID)echo 'id="sidbar-nav-box-current"';?>>
-            <a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="Flyer <?php the_title(); ?>" >
-                <?php the_post_thumbnail(array(50,50)); ?>
-            </a>
+            <div class="sidbar-nav-box navbox-bandmembers" <?php if(get_post()->ID===$singlePage->ID)echo 'id="sidbar-nav-box-current"';?>>
+                <a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="Flyer <?php the_title(); ?>" >
+                    <?php the_post_thumbnail(array(50,50)); ?>
+                </a>
 
-            <a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?> ?>" data-lightbox="Bandmembers" data-title="<?php echo $singlePage->post_title .': '.$singlePage->post_content   ?>">
-                <span class="imageWrapperBandmembers">
-                    <img class="fadeImageIn" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
-                </span>
-                <span class="text-wrapper">
-                    <?php echo $singlePage->post_title ?></i>
-                </span>
-            </a>
-        </div>
+                <a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?> ?>" data-lightbox="Bandmembers" data-title="<?php echo $singlePage->post_title .': '.$singlePage->post_content   ?>">
+                    <span class="imageWrapperBandmembers">
+                        <img class="fadeImageIn" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
+                    </span>
+                    <span class="text-wrapper">
+                        <?php echo $singlePage->post_title ?></i>
+                    </span>
+                </a>
+            </div>
     <?php endforeach; ?>
 
 </div>
