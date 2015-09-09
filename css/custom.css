@@ -253,7 +253,7 @@ input, button, div {
     overflow: hidden;
 }
 
-.sidbar-nav-box img{
+.nav-box-bg-img{
     opacity: 0.5;
 }
 
@@ -290,11 +290,22 @@ input, button, div {
     background-color: rgba(0,0,0,0.8);
 
     position: absolute;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
+    top: 50%;
+    left: 50%;
 
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                          translateX(-50%) and translateY(-50%) */
+    transform: translate(-50%, -50%);
+}
+
+/*Sidbar Nav bandmembers*/
+.navbox-bandmembers {
+    height: 150px;
+}
+
+.imageWrapperBandmembers {
+    opacity: 0.5;
+}
+.navbox-bandmembers:hover .imageWrapperBandmembers {
+    opacity: 1;
 }
 
 
@@ -640,4 +651,8 @@ td .quantity {
 
 #accordion {
     margin-bottom: 15px;
+}
+
+.fadeImageIn {
+    opacity: 0;
 }
