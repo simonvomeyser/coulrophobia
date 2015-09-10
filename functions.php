@@ -183,6 +183,15 @@ function coulrophobia_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => 'News right sidebar',
+		'id'            => 'news_right_1',
+		'before_widget' => '<div class=""><div class="news-sidebar-item text-center">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
 		'name'          => 'Footer bottom full',
 		'id'            => 'footer_bottom_full',
 		'before_widget' => '<div class="col-12">',
@@ -264,3 +273,4 @@ function IE8Support() {
 
 }
 add_action( 'wp_enqueue_scripts', 'IE8Support' );
+

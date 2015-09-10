@@ -65,19 +65,33 @@ News
     padding-left: 160px;
 }
 
+@media (max-width: 786px) {
+
+    .coulrophobia-news-content-thumbnail-padding {
+        padding-left: 0;
+    }
+
+    .coulrophobia-news-img-wrap {
+        display: none;
+    }
+}
+
 .coulrophobia-news-footer {
     clear: both;
     padding: 5px 0 0 0;
     border-top: 1px dashed #333;
+    text-align: right;
+}
+
+.coulrophobia-news-author,
+.coulrophobia-news-date {
     color: #666;
     font-size: 11px;
-    text-align: right;
 }
 
 
 .coulrophobia-news-img-wrap {
     position: absolute;
-    /*max-width: 150px;*/
     left : 0;
     top: 5px;
 }
@@ -370,7 +384,42 @@ h2 {
     color: #CCC;
 }
 
+.pagination {
+    display: block;
+    text-align: right;
+}
+
+.page-numbers {
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 10px;
+    color: #999;
+    font-size: 15px;
+    margin: 0;
+    min-width: 20px;
+    border: 1px dashed #333;
+}
+.page-numbers:hover {
+    border: 1px dashed #999;
+    background-color: rgba(0,0,0,0.9);
+    color: #999;
+    text-shadow: none;
+}
+
+
+.page-numbers.prev,
+.page-numbers.next {
+    padding: 10px 5px;
+}
+
+.page-numbers.current {
+    background-color: rgba(0,0,0,0.9);
+    border: 1px solid #999;
+    color: #999;
+    font-weight: bold;
+}
+
 .frontpage-sidebar-item,
+.news-sidebar-item
 .shop-sidebar-item {
     margin-bottom: 30px;
     overflow: hidden; /*Because FB-Plugin adepts only on loading, not resizing*/
@@ -382,11 +431,13 @@ h2 {
 }
 
 /* Shop */
-.shop-sidebar-item ul.product-categories{
+.shop-sidebar-item ul.product-categories ,
+.news-sidebar-item ul {
     list-style: none;
 }
 
-ul.product-categories li {
+ul.product-categories li,
+.news-sidebar-item ul li {
     border: 1px dashed #333;
     padding: 10px;
     text-transform: uppercase;
@@ -679,4 +730,12 @@ td .quantity {
 
 .fadeImageIn {
     opacity: 0;
+}
+
+.breadcrumbHeading>a {
+    color: #777;
+}
+
+.screen-reader-text {
+    display: none;
 }
