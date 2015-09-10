@@ -43,10 +43,14 @@ News
 
 .coulrophobia-news-header h3{
     font-size: 18px;
+    color: #bcb759;
 }
 
 .coulrophobia-news-content{
+    position: relative;
     margin-bottom: 5px;
+    min-height: 160px;
+
 }
 
 .coulrophobia-news-content:after{
@@ -55,6 +59,10 @@ News
     content: "";
     clear: both;
     height: 0;
+}
+
+.coulrophobia-news-content-thumbnail-padding {
+    padding-left: 160px;
 }
 
 .coulrophobia-news-footer {
@@ -68,10 +76,11 @@ News
 
 
 .coulrophobia-news-img-wrap {
-	float: left;
-	margin: 3px 12px 5px 0;
+    position: absolute;
+    /*max-width: 150px;*/
+    left : 0;
+    top: 5px;
 }
-
 
 /*
 Tourdates

@@ -31,14 +31,14 @@ get_header(); ?>
 						</h3>
 					</div>
 
-					<div class="coulrophobia-news-content">
+					<div class="coulrophobia-news-content <?php if(get_the_post_thumbnail()) echo "coulrophobia-news-content-thumbnail-padding"; ?>">
 
 							<?php if(get_the_post_thumbnail()): ?>
 							<div class="coulrophobia-news-img-wrap">
 
-								<a href="<?php the_permalink() ?>">
-
-									<?php the_post_thumbnail( 'thumbnail'); ?>
+								<a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="<?php the_title(); ?>">
+									<?php the_post_thumbnail('thumbnail'); ?>
+								</a>
 
 								</a>
 
@@ -49,7 +49,7 @@ get_header(); ?>
 						<!-- teas=ser text -->
 						<div class="coulrophobia-news-teaser-text">
 
-							<?php  echo strip_tags(get_the_excerpt()); ?>
+							<?php  echo the_content() ?>
 
 						</div>
 
