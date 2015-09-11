@@ -21,9 +21,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<?php
-			//Get tourdates in the future(Seen from yesterday so the if the gig is today it will still be shown)
 			$args = array(
 				'post_type' 	=> 'post',
+				'posts_per_page' 	=> 3,
 				);
 			$query = new WP_Query($args);
 		?>
@@ -31,62 +31,9 @@ get_header(); ?>
 
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-				<div class="coulrophobia-news-item">
-
-					<!-- header -->
-					<div class="coulrophobia-news-header">
-						<h3>
-							<a href="<?php the_permalink() ?>">
-								<?php the_title() ?>
-							</a>
-						</h3>
-					</div>
-
-					<div class="coulrophobia-news-content <?php if(get_the_post_thumbnail()) echo "coulrophobia-news-content-thumbnail-padding"; ?>">
-
-							<?php if(get_the_post_thumbnail()): ?>
-							<div class="coulrophobia-news-img-wrap">
-
-								<a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="<?php the_title(); ?>">
-									<?php the_post_thumbnail('thumbnail'); ?>
-								</a>
-
-								</a>
-
-							</div>
-							<?php endif; ?>
-
-
-						<!-- teas=ser text -->
-						<div class="coulrophobia-news-teaser-text">
-
-							<?php  echo the_content() ?>
-
-						</div>
-
-					</div>
-
-					<!-- footer information -->
-					<div class="coulrophobia-news-footer">
-						<p>
-							<!-- date -->
-							<span class="coulrophobia-news-date">
-								<?php the_date(); ?>
-							</span>
-
-							<!-- author -->
-
-							<span class="coulrophobia-news-author">
-								erstellt von <?php the_author() ?>
-							</span>
-
-						</p>
-					</div>
-				</div>
+				<?php get_template_part('content', 'news'); ?>
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
@@ -94,7 +41,9 @@ get_header(); ?>
 
 		<?php endif; ?>
 		<?php wp_reset_postdata(); ?>
-
+		<div class="text-right">
+			<a href ="<?php echo site_url() .'/news'; ?>">Alle News anzeigen <i class="fa fa-angle-double-right"></i></a>
+		</div>
 	</div>
 </div>
 <div class="col-md-4" id="frontpage-sidebar">
