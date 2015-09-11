@@ -39,6 +39,7 @@ News
 .coulrophobia-news-header{
     margin-top: 25px;
     margin-bottom: 10px;
+    border-bottom: 1px dashed #333;
 }
 
 .coulrophobia-news-header h3{
