@@ -274,3 +274,4 @@ function IE8Support() {
 }
 add_action( 'wp_enqueue_scripts', 'IE8Support' );
 
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
