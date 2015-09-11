@@ -399,6 +399,14 @@ h2 {
     min-width: 20px;
     border: 1px dashed #333;
 }
+@media (max-width: 786px) {
+
+    .page-numbers.prev,
+    .page-numbers.next {
+        display: none;
+    }
+}
+
 .page-numbers:hover {
     border: 1px dashed #999;
     background-color: rgba(0,0,0,0.9);
