@@ -694,6 +694,10 @@ td .quantity {
     padding-left: 0;
 }
 
+.woocommerce div.product form.cart .variations select {
+    color: #000;
+}
+
 /* Bootstrap override */
 .panel-group .panel {
     margin-bottom: 0;
@@ -764,5 +768,8 @@ td .quantity {
 
 blockquote p {
     font-size: 1em;
+    font-style: italic;
 }
+
+
 
