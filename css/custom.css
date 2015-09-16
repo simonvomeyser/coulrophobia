@@ -12,6 +12,10 @@ body.logged-in.admin-bar{
    margin-top: 32px;
 }
 
+ul {
+    list-style: inside;
+}
+
 #trans-bg,
 #bg-fade-in {
     position: absolute;
@@ -103,7 +107,8 @@ Tourdates
 .coulrophobia-tourdate-list-item,
 .coulrophobia-tourdate-list-item-widget,
 .coulrophobia-tourdate-list-item-widget-inactive,
-.coulrophobia-tourdate-single-item  {
+.coulrophobia-tourdate-single-item,
+.coulrophobia-news-more {
     background-color: rgba(0,0,0,0.6);
     padding: 10px;
     margin-bottom: 12px;
@@ -747,4 +752,8 @@ td .quantity {
 
 .screen-reader-text {
     display: none;
+}
+
+.site-footer {
+    margin-top: 30px;
 }
