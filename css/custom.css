@@ -12,7 +12,7 @@ body.logged-in.admin-bar{
    margin-top: 32px;
 }
 
-ul {
+ul,ol {
     list-style: inside;
 }
 
@@ -761,3 +761,4 @@ td .quantity {
 blockquote p {
     font-size: 1em;
 }
+
