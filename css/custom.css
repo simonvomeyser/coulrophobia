@@ -16,6 +16,10 @@ ul,ol {
     list-style: inside;
 }
 
+ol {
+    list-style-type: decimal;
+}
+
 #trans-bg,
 #bg-fade-in {
     position: absolute;
