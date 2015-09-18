@@ -167,8 +167,8 @@ function coulrophobia_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Shop right sidbar',
 		'id'            => 'shop_sidebar_right',
-		'before_widget' => '<div class=""><div class="shop-sidebar-item">',
-		'after_widget'  => '</div></div>',
+		'before_widget' => '<div class="shop-sidebar-item">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
@@ -176,8 +176,8 @@ function coulrophobia_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Home right sidebar',
 		'id'            => 'home_right_1',
-		'before_widget' => '<div class=""><div class="frontpage-sidebar-item text-center">',
-		'after_widget'  => '</div></div>',
+		'before_widget' => '<div class="frontpage-sidebar-item text-center">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
@@ -185,8 +185,8 @@ function coulrophobia_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'News right sidebar',
 		'id'            => 'news_right_1',
-		'before_widget' => '<div class=""><div class="news-sidebar-item text-center">',
-		'after_widget'  => '</div></div>',
+		'before_widget' => '<div class="news-sidebar-item text-center">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
