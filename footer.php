@@ -17,7 +17,7 @@
 
         <div class="row hidden-xs">
             <div class="col-lg-12">
-                <h3>Die Fachpresse zu „Coulrophobia“: (<a href="http://www.cyrcus.com/coulrophobia/">Hier bestellen!</a>)</h3>
+                <h3>Die Fachpresse zu „Coulrophobia“: (<a href="<?php echo site_url() ."/shop"; ?>">Hier bestellen!</a>)</h3>
             </div>
         </div>
 
