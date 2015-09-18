@@ -55,14 +55,8 @@ get_header( 'shop' ); ?>
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
-				<?php
-				$args = array(
-					'post_type' 	=> 'product',
-					'posts_per_page' 	=> 10,
-					);
-				$query = new WP_Query($args);
-				?>
-				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php wc_get_template_part( 'content', 'product' ); ?>
 

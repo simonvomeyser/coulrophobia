@@ -41,7 +41,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 		<?php wp_reset_postdata(); ?>
-		<div class="text-right">
+		<div class="coulrophobia-news-more text-right" >
 			<a href ="<?php echo site_url() .'/news'; ?>">Alle News anzeigen <i class="fa fa-angle-double-right"></i></a>
 		</div>
 	</div>
