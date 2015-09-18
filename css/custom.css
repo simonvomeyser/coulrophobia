@@ -437,10 +437,13 @@ h2 {
 }
 
 .frontpage-sidebar-item,
-.news-sidebar-item
-.shop-sidebar-item {
+.news-sidebar-item {
     margin-bottom: 30px;
     overflow: hidden; /*Because FB-Plugin adepts only on loading, not resizing*/
+}
+
+.shop-sidebar-item {
+    margin-bottom: 30px;
 }
 
 
