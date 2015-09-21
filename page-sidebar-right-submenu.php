@@ -50,11 +50,11 @@ get_header(); ?>
 	}
 	$args = array(
     	'child_of' => $parentPage->ID,
-    	'sort_column' => 'post_date',
+    	'sort_column' => 'menu_order',
     	'parent' => -1,
     	'post_type' => 'page',
     	'post_status' => 'publish',
-    	'sort_order' => 'desc'
+    	'sort_order' => 'asc'
     );
     $pages = get_pages($args);
 
