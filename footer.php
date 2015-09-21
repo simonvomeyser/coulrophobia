@@ -57,7 +57,7 @@
                     &copy; <?php echo date("Y", time()) ?> by CYRCUS | Webdesign: Simon vom Eyser &amp; <a href="http://www.simon-koehler.com">Simon Köhler</a>
                 </div>
                 <div class="footer-legal">
-                    <a href="<?php echo site_url() ?>/Impressum">Impressum</a> | <a href="<?php echo site_url() ?>/AGB">AGB</a> | <a href="<?php echo site_url() ?>/widerrufsbelehrung">Widerrufsbelehrung</a> | <a href="<?php echo site_url() ?>/datenschutzerlkaerung">Datenschutzerlkärung</a>
+                    <a href="<?php echo site_url() ?>/rechtliches/impressum">Impressum</a> | <a href="<?php echo site_url() ?>/rechtliches/agb">AGB</a> | <a href="<?php echo site_url() ?>/rechtliches/widerrufsbelehrung">Widerrufsbelehrung</a> | <a href="<?php echo site_url() ?>/rechtliches/datenschutzerklaerung">Datenschutzerklärung</a>
                 </div>
             </div>
         </div>
