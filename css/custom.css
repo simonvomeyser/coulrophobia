@@ -774,5 +774,10 @@ blockquote p {
     font-style: italic;
 }
 
+.footer-copyright {
+    margin-bottom: 10px;
+}
 
+.footer-legal {
 
+}

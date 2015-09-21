@@ -53,7 +53,12 @@
 
         <div class="container" id="footer">
             <div class="text-center">
-            &copy; <?php echo date("Y", time()) ?> by CYRCUS | <a href="<?php bloginfo('site_url') ?>/Impressum">Impressum</a> | Webdesign: Simon vom Eyser + <a href="http://www.simon-koehler.com">Simon Köhler</a> | WordPress-theme: Simon vom Eyser
+                <div class="footer-copyright">
+                    &copy; <?php echo date("Y", time()) ?> by CYRCUS | Webdesign: Simon vom Eyser &amp; <a href="http://www.simon-koehler.com">Simon Köhler</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="<?php echo site_url() ?>/Impressum">Impressum</a> | <a href="<?php echo site_url() ?>/AGB">AGB</a> | <a href="<?php echo site_url() ?>/widerrufsbelehrung">Widerrufsbelehrung</a> | <a href="<?php echo site_url() ?>/datenschutzerlkaerung">Datenschutzerlkärung</a>
+                </div>
             </div>
         </div>
 
