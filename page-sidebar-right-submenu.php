@@ -65,7 +65,7 @@ get_header(); ?>
     		<a href="<?php echo get_permalink($singlePage->ID); ?>">
     			<img class="nav-box-bg-img" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
 
-    			<span class="text-wrapper">
+    			<span class="text-wrapper<?php if (wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))) { echo ' text-wrapper-with-image'; } ?>">
     				<?php echo $singlePage->post_title ?></i>
     			</span>
     		</a>

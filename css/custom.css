@@ -326,13 +326,14 @@ input, button, div {
 
 .sidbar-nav-box .text-wrapper {
     padding: 10px;
-    background-color: rgba(0,0,0,0.8);
-
     position: absolute;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
+}
+
+.sidbar-nav-box .text-wrapper-with-image {
+    background-color: rgba(0,0,0,0.8);
 }
 
 /*Sidbar Nav bandmembers*/
