@@ -24,6 +24,10 @@ include_afc_maps(); //includes css and js in order for gmaps to work
 		<?php get_template_part('content', 'tourdates-header') ?>
 		<div class="row">
 			<div class="col-xs-12">
+				<?php if(get_field('cancelled')): ?>
+					<h3>Abgesagt!</h3>
+					<?php the_field('cancelled') ?>
+				<?php endif ?>
 				<h3>Beschreibung</h3>
 				<?php the_field('description') ?>
 				<h3>Zusammenfassung</h3>

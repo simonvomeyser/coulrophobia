@@ -142,6 +142,10 @@ Tourdates
 .coulrophobia-tourdate-title {
     font-size: 20px;
 }
+.coulrophobia-tourdate-title,
+.coulrophobia-tourdate-title-archive {
+    font-weight: bold;
+}
 
 .coulrophobia-tourdate-title-widget {
     font-size: 18px;
@@ -196,7 +200,15 @@ Tourdates
 }
 
 
+.cancelledWord {
+    color: #900000;
+    font-style: italic;
+    font-size: .8em;
+}
 
+.coulrophobia-tourdate-cancelled {
+    text-decoration: line-through;
+}
 
 /*Tooltips*/
 

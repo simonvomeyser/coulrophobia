@@ -13,7 +13,10 @@ $location = get_field('location');
 	</div>
 	<div class="col-sm-7 col-xs-12">
 		<span class="coulrophobia-tourdate-title-archive">
-			<b><?php the_title(); ?></b>
+			<span class="<?php if(get_field('cancelled')) echo "coulrophobia-tourdate-cancelled"; ?>"><?php the_title(); ?></span>
+			<?php if(get_field('cancelled')): ?>
+				<span class="cancelledWord"> (abgesagt!)</span>
+			<?php endif ?>
 		</span>
 		<?php if($location['address']): ?>
 			<br/><?php echo $location['address']; ?>

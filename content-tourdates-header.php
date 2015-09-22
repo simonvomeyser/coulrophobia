@@ -27,7 +27,10 @@ $location = get_field('location');
 	</div>
 	<div class="col-sm-6 col-xs-9">
 		<span class="coulrophobia-tourdate-title">
-			<b><?php the_title(); ?></b>
+			<span class="<?php if(get_field('cancelled')) echo "coulrophobia-tourdate-cancelled"; ?>"><?php the_title(); ?></span>
+			<?php if(get_field('cancelled')): ?>
+				<span class="cancelledWord">(abgesagt!)</span>
+			<?php endif ?>
 		</span>
 		<?php if($location['address']): ?>
 			<br/> <?php echo $location['address']; ?>
