@@ -70,7 +70,8 @@ get_header(); ?>
                     <span class="imageWrapperBandmembers">
                         <img class="fadeImageIn" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
                     </span>
-                    <span class="text-wrapper">
+
+                    <span class="text-wrapper<?php if (wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))) { echo ' text-wrapper-with-image'; } ?>">
                         <?php echo $singlePage->post_title ?></i>
                     </span>
                 </a>
