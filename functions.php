@@ -86,29 +86,15 @@ add_action( 'after_setup_theme', 'coulrophobia_setup' );
 
 function coulrophobia_styles() {
 
-	//normalizing
-	wp_enqueue_style('normalizing-styles', get_template_directory_uri() . '/css/normalize.css');
-
 	//oswald font
 	wp_enqueue_style('googlefonts-oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700');
 
 	//font-awesome
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/lib/font-awesome/css/font-awesome.min.css');
 
-	//jq ui, not needed currently
-	// wp_enqueue_style('jquery-ui-css', get_template_directory_uri() . '/lib/jquery-ui/jquery-ui.css');
-
-	//bootstrap
-	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/lib/bootstrap/css/bootstrap.min.css');
-
-	//lightbox
-	wp_enqueue_style('lightbox', get_template_directory_uri() . '/lib/lightbox/css/lightbox.css');
-
-	//Imported styles
+	//file create via gruntfile.js
 	wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css');
 
-	//Overwriting styles
-	wp_enqueue_style('custom-styles', get_template_directory_uri() . '/css/custom.css');
 
 }
 
