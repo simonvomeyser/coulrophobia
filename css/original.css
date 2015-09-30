@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a{
+  text-decoration:none;
+  text-shadow: none;
+  -webkit-transition: 200ms linear 0s;
+  -moz-transition: 200ms linear 0s;
+  -o-transition: 200ms linear 0s;
+  transition: 200ms linear 0s;
+  outline: 0 none;
+  color: #bcb759;
+}
+
+a:hover, a:focus{
+  text-decoration:none;
+  text-shadow: -1px 1px 8px #e2dc5a, 1px -1px 8px #e2dc5a;
+  color: #e2dc5a;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+input,textarea, .form-control{
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
+
+.well{
+    background-color: #000;
+}
+
+h1,h2,h3,h4,h5{
+    color: #999;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+h1{ font-size: 32px; }
+h2{ font-size: 22px; }
+h3{ font-size: 20px; }
+
+.wrapper{
+    background: rgba(0,0,0,0.5);
+}
+
+.audioplayer-track{
+    clear: both;
+    display: block;
+    padding: 6px 0 6px 0;
+    border-top: 1px dashed #333;
+}
+
+.audioplayer-track .title{
+    float: left;
+    width: 40%;
+}
+
+.audioplayer-track audio{
+    float: left;
+    width: 60%;
+}
+
+#page-wrap{
+    width: 100%;
+    height: 100%;
+}
+
+#clown-corner{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(../img/bg-clown-corner.png);
+    background-size: cover;
+    width: 332px;
+    height: 164px;
+}
+
+#logo{ margin: 20px 0 20px 0; }
+
+#iconbar{ position: absolute; top: 40px; right: 10px; }
+#iconbar ul{
+    list-style-type: none;
+}
+#iconbar ul li a{
+    font-size: 30px;
+}
+
+.nav-pills>li>a{
+    border-radius: 0;
+}
+
+.nav>li>a{
+    padding: 8px 10px 8px 10px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    color: #eee;
+    background-color: transparent;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#menu-primary{
+
+}
+
+#menu-primary ul.nav{
+
+}
+
+#menu-primary ul.nav li a{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+
+#mainContent{
+    padding: 40px 0 40px 0;
+}
+
+#sidebar{
+
+}
+
+#footer{
+    border-top: 1px dashed #333;
+    padding: 20px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #000;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #333;
+    border-color: transparent;
+}
+
+.dropdown-menu { background-color: #000;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #eee;
+    background-color: #333;
+}
+
+
+.news-list-view .header h3{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.news .footer {
+    clear: both;
+    padding: 10px 0 0 0;
+    border-top: 1px dashed #333;
+    margin-top: 15px;
+    color: #666;
+    font-size: 11px;
+}
+
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin-left: -1px;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    background-color: transparent;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+
+@media(max-width:768px){
+    #sidebar{
+        padding-top: 0px;
+    }
+}
+
+@media(max-width:480px){
+    body{ font-size: 13px; }
+    #iconbar{ position: static; top: auto; right: auto; text-align: center; display:block; background: #333; }
+    #iconbar ul { margin-left: 0px;}
+    #iconbar ul li{ display: inline-block; margin-right: 10px;}
+    #iconbar ul li:last-child{ margin-right: 0; }
+    .audioplayer-track .title,
+    .audioplayer-track audio{ float: none; width: 100%; display: block; }
+}
