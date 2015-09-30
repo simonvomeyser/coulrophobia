@@ -226,12 +226,12 @@ add_action( 'woocommerce_before_shop_loop', 'wc_print_notices', 10 );
 add_action( 'woocommerce_before_single_product', 'wc_print_notices', 10);
 add_action( 'after_setup_theme', 'woocommerce_support' );
 
+/**
+ * Simply tell woocommerce that theme supports it
+ */
 function woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
-
-
-add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 /**
  * Removes a few unnecessary fields
@@ -246,6 +246,7 @@ function custom_override_checkout_fields( $fields ) {
 
 	return $fields;
 }
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 function IE8Support() {
 
