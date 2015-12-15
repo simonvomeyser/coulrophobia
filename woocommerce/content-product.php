@@ -56,6 +56,12 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 */
 			do_action( 'woocommerce_before_shop_loop_item_title' );
 
+			if ( !$product->is_in_stock()) {
+
+				echo '<span class="soldout">SOLD OUT!</span>'; 
+			}
+		    
+
 			/**
 			 * woocommerce_shop_loop_item_title hook
 			 *
