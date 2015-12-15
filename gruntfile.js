@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                     'keepSpecialComments': '0',
                 },
                 files: {
-                    'style-min.css': [
+                    'css/style-min.css': [
                         'css/normalize.css',
                         'lib/bootstrap/css/bootstrap.min.css',
                         'lib/lightbox/css/lightbox.css',
