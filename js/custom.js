@@ -14,11 +14,6 @@ jQuery( document ).ready(function( $ ) {
 
 	});
 
-	// $('.fadeImageIn').imagesLoaded( function(e) {
-	//     // All descendant images have loaded, now fade out (and image in).
-	// 	$(e).animate({opacity: 1}, 1000);
-	// });
-
 	//Toggeling of font awesome chevrons in accordeon
 	$('#accordion').on('hide.bs.collapse', function (event) {
 		$(event.target).closest('.panel').find('.fa-chevron-circle-down').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-right');
