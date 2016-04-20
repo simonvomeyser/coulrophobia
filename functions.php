@@ -89,12 +89,8 @@ function coulrophobia_styles() {
 	//oswald font
 	wp_enqueue_style('googlefonts-oswald', 'https://fonts.googleapis.com/css?family=Oswald:400,300,700');
 
-	//font-awesome
-	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/lib/font-awesome/css/font-awesome.min.css');
-
 	//file create via gruntfile.js
 	wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css');
-
 
 }
 
@@ -102,9 +98,6 @@ add_action( 'wp_enqueue_scripts', 'coulrophobia_styles' );
 
 
 function coulrophobia_scripts() {
-
-	//jq ui, not needed currently
-	// wp_enqueue_script('jquery-ui-js', get_template_directory_uri() . '/lib/jquery-ui/jquery-ui.js', array('jquery'), '', true);
 
 	//lightbox
 	wp_enqueue_script('lightbox-js', get_template_directory_uri() . '/lib/lightbox/js/lightbox.js', array('jquery'), '', true);

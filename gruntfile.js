@@ -1,15 +1,5 @@
 module.exports = function(grunt) {
 
-    // grunt.registerTask('speak', function() {
-    // 	console.log ("Grunt working mate "); //Debug
-    // });
-
-    // grunt.registerTask('yell', function() {
-    // 	console.log ("GRUNT WORKING MATE "); //Debug
-    // });
-
-    // grunt.registerTask('default', ['speak', 'yell']);
-
     grunt.initConfig({
         cssmin: {
             target: {
@@ -18,6 +8,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'css/style-min.css': [
+                        'css/font-awesome.min.css',
                         'css/normalize.css',
                         'lib/bootstrap/css/bootstrap.min.css',
                         'lib/lightbox/css/lightbox.css',
@@ -33,14 +24,28 @@ module.exports = function(grunt) {
                 dest: 'style.css',
             },
         },
+        uglify: {
+          target: {
+            files: {
+              'js-min/coulrophobia.min.js': [
+                '/lib/lightbox/js/lightbox.js',
+                '/lib/bootstrap/js/bootstrap.min.js',
+                '/js/imagesloaded.js',
+                '/js/afc-map.js',
+                '/js/custom.js'
+                ]
+            }
+          }
+        },
         watch: {
             css: {
-                files: ['css/*.css'],
-                tasks: ['cssmin', 'concat']
+                files: ['css/*.css', 'js/*'],
+                tasks: ['cssmin', 'concat', 'uglify']
             },
         },
     });
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 };
