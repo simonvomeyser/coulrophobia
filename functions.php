@@ -87,7 +87,7 @@ add_action( 'after_setup_theme', 'coulrophobia_setup' );
 function coulrophobia_styles() {
 
 	//oswald font
-	wp_enqueue_style('googlefonts-oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700');
+	wp_enqueue_style('googlefonts-oswald', 'https://fonts.googleapis.com/css?family=Oswald:400,300,700');
 
 	//font-awesome
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/lib/font-awesome/css/font-awesome.min.css');
