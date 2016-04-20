@@ -15,7 +15,7 @@ get_header(); ?>
        ?>
    </h1>
 </div>
-<div class="col-sm-12 col-md-8">
+<div class="col-xs-12 col-md-8">
 <h2><?php the_title(); ?></h2>
     <div id="maincontent">
 		<?php if ( have_posts() ) : ?>
