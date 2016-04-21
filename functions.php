@@ -99,17 +99,17 @@ add_action( 'wp_enqueue_scripts', 'coulrophobia_styles' );
 
 function coulrophobia_scripts() {
 
-	//lightbox
-	wp_enqueue_script('lightbox-js', get_template_directory_uri() . '/lib/lightbox/js/lightbox.js', array('jquery'), '', true);
+	// //lightbox
+	// wp_enqueue_script('lightbox-js', get_template_directory_uri() . '/lib/lightbox/js/lightbox.js', array('jquery'), '', true);
 
-	//bootsrap
-	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array('jquery'), '', true);
+	// //bootsrap
+	// wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array('jquery'), '', true);
 
-	//imagesloaded
-	wp_enqueue_script('imagesloaded-js', get_template_directory_uri() . '/js/imagesloaded.js', array('jquery'), '', true);
+	// //imagesloaded
+	// wp_enqueue_script('imagesloaded-js', get_template_directory_uri() . '/js/imagesloaded.js', array('jquery'), '', true);
 
 	//own scripts, dependend on jquery so document ready is not nesc.
-	wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery','imagesloaded-js'), '', true);
+	wp_enqueue_script('coulrophobia.min.js', get_template_directory_uri() . '/js-min/coulrophobia.min.js', array('jquery'), '', true);
 
 }
 
@@ -120,7 +120,7 @@ add_action( 'wp_enqueue_scripts', 'coulrophobia_scripts' );
 function include_afc_maps() {
 
 	wp_enqueue_script('gmaps-jsafc-js', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', true);
-	wp_enqueue_script('afc-js', get_template_directory_uri() . '/js/afc-map.js', '', '', true);
+	wp_enqueue_script('afc-js', get_template_directory_uri() . '/js/afc-map.js', ['jquery', 'coulrophobia.min.js'], '', true);
 
 	wp_enqueue_style('afc-css', get_template_directory_uri() . '/css/afc-map.css');
 
