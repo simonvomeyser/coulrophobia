@@ -26,7 +26,7 @@ if ($_COOKIE['iwashere'] != "yes") {
 <div id="page" style="position:relative;" class="hfeed site">
 <div id="trans-bg" style="background-color: #<?php background_color(); ?>;"></div>
 
-<?php if ($_COOKIE['iwashere'] != "yes" && is_home()): ?>
+<?php if (is_front_page()): ?>
 		<div id="bg-fade-in" style="background-color: #<?php background_color(); ?>"></div>
 <?php endif ?>
 
@@ -79,5 +79,5 @@ if ($_COOKIE['iwashere'] != "yes") {
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content container <?php if (is_front_page()) {echo 'content-fade-in';} ?>">
 	<div class="row">

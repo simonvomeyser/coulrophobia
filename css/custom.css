@@ -35,7 +35,30 @@ ol {
 }
 #bg-fade-in {
     opacity: 1;
-    z-index: -1;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;    
+}
+#bg-fade-in.bg-fading-in {
+    opacity: 0;
+}
+
+.content-fade-in {
+
+    opacity: 0;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.content-fading-in {
+    opacity: 1;
+
 }
 
 /*

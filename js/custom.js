@@ -1,5 +1,6 @@
 jQuery( document ).ready(function( $ ) {
 
+
 	//add tooltips
 	$('[data-toggle="tooltip"]').tooltip();
 
@@ -10,7 +11,6 @@ jQuery( document ).ready(function( $ ) {
 
 	imagesLoaded( document.querySelector('body'), function( instance ) {
 	 	$('.fadeImageIn').imagesLoaded().animate({opacity: 1}, 2500);
-		$('#bg-fade-in').animate({opacity: 0}, 1000);
 	});
 	//Toggeling of font awesome chevrons in accordeon
 	$('#accordion').on('hide.bs.collapse', function (event) {
@@ -23,5 +23,12 @@ jQuery( document ).ready(function( $ ) {
 	lightbox.option({
 	   'showImageNumberLabel': false
 	});
+
+	$('#bg-fade-in').addClass('bg-fading-in')
+	setTimeout(function () {
+		$('#content').addClass('content-fading-in');
+	}, 1000)
+		
+
 });
 
