@@ -33,23 +33,17 @@ module.exports = function(grunt) {
                 dest: 'style.css',
             },
         },
-        // uglify: {
-        //   target: {
-        //     files: {
-        //       'js-min/coulrophobia.min.js': [
-        //         '/lib/lightbox/js/lightbox.js',
-        //         '/lib/bootstrap/js/bootstrap.min.js',
-        //         '/js/imagesloaded.js',
-        //         '/js/afc-map.js',
-        //         '/js/custom.js'
-        //         ]
-        //     }
-        //   }
-        // },
+        uglify: {
+          target: {
+            files: {
+              'js-min/coulrophobia.min.js': ['js-min/coulrophobia.min.js']
+            }
+          }
+        },
         watch: {
             css: {
                 files: ['css/*.css', 'js/*'],
-                tasks: ['cssmin', 'concat']
+                tasks: ['cssmin', 'concat', 'uglify']
             },
         },
     });
