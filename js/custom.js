@@ -24,9 +24,10 @@ jQuery( document ).ready(function( $ ) {
 	   'showImageNumberLabel': false
 	});
 
-	$('#bg-fade-in').addClass('bg-fading-in')
+	$('#bg-fade-in').addClass('bg-fading-in');
 	setTimeout(function () {
 		$('#content').addClass('content-fading-in');
+		$('#bg-fade-in').remove();
 	}, 1000)
 		
 
