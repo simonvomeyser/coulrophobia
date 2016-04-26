@@ -54,7 +54,7 @@
         <div class="container" id="footer">
             <div class="text-center">
                 <div class="footer-copyright">
-                    &copy; <?php echo date("Y", time()) ?> by CYRCUS | Webdesign: <a href="https://www.simonvomeyser.com">Simon vom Eyser</a> &amp; <a href="http://www.simon-koehler.com">Simon Köhler</a>
+                    &copy; <?php echo date("Y", time()) ?> by CYRCUS | Webdesign: <a href="https://www.simonvomeyser.de">Simon vom Eyser</a> &amp; <a href="http://www.simon-koehler.com">Simon Köhler</a>
                 </div>
                 <div class="footer-legal">
                     <a href="<?php echo site_url() ?>/rechtliches/impressum">Impressum</a> | <a href="<?php echo site_url() ?>/rechtliches/agb">AGB</a> | <a href="<?php echo site_url() ?>/rechtliches/widerrufsbelehrung">Widerrufsbelehrung</a> | <a href="<?php echo site_url() ?>/rechtliches/datenschutzerklaerung">Datenschutzerklärung</a>
