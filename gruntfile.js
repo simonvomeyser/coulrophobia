@@ -6,9 +6,9 @@ module.exports = function(grunt) {
                 options: {
                     'keepSpecialComments': '0',
                 },
+
                 files: {
                     'css/style-min.css': [
-                        'css/font-awesome.min.css',
                         'css/normalize.css',
                         'lib/bootstrap/css/bootstrap.min.css',
                         'lib/lightbox/css/lightbox.css',

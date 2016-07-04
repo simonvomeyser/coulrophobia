@@ -88,6 +88,9 @@ function coulrophobia_styles() {
 
 	//oswald font
 	wp_enqueue_style('googlefonts-oswald', 'https://fonts.googleapis.com/css?family=Oswald:400,300,700');
+	
+	//fontawesome
+	wp_enqueue_style('fontawesome', get_template_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
 	//file create via gruntfile.js
 	wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css');
