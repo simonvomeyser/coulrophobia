@@ -18,7 +18,13 @@ if ($_COOKIE['iwashere'] != "yes") {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true); 
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>" />
 <?php wp_head(); ?>
 </head>
 
@@ -33,7 +39,19 @@ if ($_COOKIE['iwashere'] != "yes") {
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 		    <div id="logo">
-		        <a href="<?php echo site_url(); ?>"><img class="img-responsive" width="420" src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" /></a>
+		    	<h1>
+		        	<a href="<?php echo site_url(); ?>">
+		        		<img class="img-responsive"
+		        		width="420"
+		        		src="<?php echo( get_header_image() ); ?>"
+		        		alt="<?php if ( is_single() ) {
+						        single_post_title('', true); 
+						    } else {
+						        bloginfo('name'); echo " - "; bloginfo('description');
+						    }
+						    ?>" />
+		        	</a>
+		        </h1>
 		    </div>
 		</div>
 
