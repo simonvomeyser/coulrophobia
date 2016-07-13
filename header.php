@@ -39,19 +39,13 @@ if ($_COOKIE['iwashere'] != "yes") {
     <header id="masthead" class="site-header" role="banner">
         <div class="container">
             <div id="logo">
-                <h1>
+                <h1 class="hidden"><?php bloginfo('name'); ?></h1>
                     <a href="<?php echo site_url(); ?>">
                         <img class="img-responsive"
                         width="420"
                         src="<?php echo( get_header_image() ); ?>"
-                        alt="<?php if ( is_single() ) {
-                                single_post_title('', true); 
-                            } else {
-                                bloginfo('name'); echo " - "; bloginfo('description');
-                            }
-                            ?>" />
+                        alt="<?php bloginfo('name'); ?> - Logo" />
                     </a>
-                </h1>
             </div>
         </div>
 
