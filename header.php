@@ -25,6 +25,14 @@ if ($_COOKIE['iwashere'] != "yes") {
         bloginfo('name'); echo " - "; bloginfo('description');
     }
     ?>" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<?php wp_title(); ?>"/>
+<meta property="og:description" content="<?php bloginfo('description');  ?>"/>
+<meta property="og:url" content="<?php echo site_url(); ?>"/>
+<meta property="og:site_name" content="<?php bloginfo('name');  ?>"/>
+<meta property="og:image" content="<?php echo get_header_image(); ?>"/>
+
 <?php wp_head(); ?>
 </head>
 
