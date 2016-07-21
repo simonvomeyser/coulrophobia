@@ -413,11 +413,6 @@ input, button, div {
     height: 100%;
 }
 
-#frontpage-sidebar h2,
-#shop-sidebar-right h2,
-#sidebar h2
-{
-}
 
 h2 {
     border: 1px solid #333;
@@ -432,6 +427,17 @@ h2 {
     text-transform: uppercase;
     color: #CCC;
 }
+
+h2.frontpage-news-heading {
+    color: #999;
+    padding: 0;
+    border: 0px;
+    text-align: left;
+    background-color: transparent;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
 
 .pagination {
     display: block;
