@@ -18,15 +18,6 @@ if ($_COOKIE['iwashere'] != "yes") {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<title><?php 
-        //Different display for single post pages
-        if ( is_single() ) {
-            wp_title("-", true, 'right'); bloginfo('name');
-        } else {
-            bloginfo('name'); wp_title("-"); 
-        }
-        ?>
-    <?php bloginfo('name'); ?><?php wp_title("-"); ?></title>
 <meta name="description" content="<?php if ( is_single() ) {
         single_post_title('', true); 
     } else {
