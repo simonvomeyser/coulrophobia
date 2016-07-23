@@ -21,7 +21,7 @@ Template for a row with evrything in relation to an tourdate
 				<?php the_post_thumbnail(array(50,50)); ?>
 			</a>
 			<?php else:?>
-				<img src="http://placehold.it/50?text=No+Flyer" class="img-responisve">
+				<img src="http://placehold.it/50?text=No+Flyer" alt="There is no flyer for this show" class="img-responisve">
 			<?php endif;?>
 		</div>
 	</div>

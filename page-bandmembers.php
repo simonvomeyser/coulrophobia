@@ -68,7 +68,7 @@ get_header(); ?>
 
                 <a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?> ?>" data-lightbox="Bandmembers" data-title="<?php echo $singlePage->post_title .': '.$singlePage->post_content   ?>">
                     <span class="imageWrapperBandmembers">
-                        <img class="fadeImageIn" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
+                        <img alt="Bandmember <?php the_title(); ?>" class="fadeImageIn" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
                     </span>
 
                     <span class="text-wrapper<?php if (wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))) { echo ' text-wrapper-with-image'; } ?>">

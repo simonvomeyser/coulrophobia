@@ -21,7 +21,7 @@ $location = get_field('location');
 					<?php the_post_thumbnail(array(50,50)); ?>
 				</a>
 			<?php else:?>
-				<img src="<?php echo get_template_directory_uri()."/images/noflyer50x50.png" ?>" />
+				<img alt="there is not flyer for this show" src="<?php echo get_template_directory_uri()."/images/noflyer50x50.png" ?>" />
 			<?php endif;?>
 		</div>
 	</div>

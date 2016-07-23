@@ -63,7 +63,7 @@ get_header(); ?>
 
     	<div class="sidbar-nav-box"	<?php if(get_post()->ID===$singlePage->ID)echo 'id="sidbar-nav-box-current"';?>>
     		<a href="<?php echo get_permalink($singlePage->ID); ?>">
-    			<img class="nav-box-bg-img" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
+    			<img alt="background image of the navigation" class="nav-box-bg-img" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))?>">
 
     			<span class="text-wrapper<?php if (wp_get_attachment_url(get_post_thumbnail_id( $singlePage->ID ))) { echo ' text-wrapper-with-image'; } ?>">
     				<?php echo $singlePage->post_title ?></i>
