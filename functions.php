@@ -28,7 +28,7 @@ function coulrophobia_setup() {
 	 * hard-coded <title> tag in the document head, and expect WordPress to
 	 * provide it for us.
 	 */
-	add_theme_support( 'title-tag' );
+	//add_theme_support( 'title-tag' );
 
 	//Supports thumbnails in posts
 	add_theme_support( 'post-thumbnails' );
