@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The header for our theme.
@@ -25,8 +26,7 @@ if ($_COOKIE['iwashere'] != "yes") {
        } else {
            bloginfo('name'); wp_title("-"); 
        }
-       ?>
-   <?php bloginfo('name'); ?><?php wp_title("-"); ?></title>
+       ?></title>
 <meta name="description" content="<?php if ( is_single() ) {
         single_post_title('', true); 
     } else {
