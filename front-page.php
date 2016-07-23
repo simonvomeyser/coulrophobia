@@ -30,9 +30,9 @@ get_header(); ?>
 			?>
 			<?php if ( have_posts() ) : ?>
 	
+				<h2 class="frontpage-news-heading">News</h2>
 				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 	
-					<h2 class="frontpage-news-heading">News</h2>
 					<?php get_template_part('content', 'news'); ?>
 	
 				<?php endwhile; ?>
