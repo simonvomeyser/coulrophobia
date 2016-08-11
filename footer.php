@@ -13,7 +13,7 @@
     </div><!-- .row -->
     </div><!-- #content container -->
 
-    <footer id="colophon" class="site-footer container" role="contentinfo">
+    <footer id="colophon" class="site-footer container">
 
         <div class="row hidden-xs">
             <div class="col-lg-12">

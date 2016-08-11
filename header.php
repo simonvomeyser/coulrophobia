@@ -52,7 +52,7 @@ if ($_COOKIE['iwashere'] != "yes") {
         <div id="bg-fade-in" style="background-color: #<?php background_color(); ?>"></div>
 <?php endif ?>
 
-    <header id="masthead" class="site-header" role="banner">
+    <header id="masthead" class="site-header">
         <div class="container">
             <div id="logo">
                 <h1 class="hidden"><?php bloginfo('name'); ?></h1>
@@ -70,7 +70,7 @@ if ($_COOKIE['iwashere'] != "yes") {
             <div class="row">
                 <div class="col-lg-12">
 
-                    <nav class="navbar navbar-default" role="navigation">
+                    <nav class="navbar navbar-default">
                         <div class="navbar-header">
                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
