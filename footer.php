@@ -3,7 +3,8 @@
  * The template for displaying the footer.
  *
  * Contains the closing of the #content div and all content after
- *
+ * 
+ * @todo make testimonials optional and backend dependent  
  * @package coulrophobia
  */
 
