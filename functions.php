@@ -122,7 +122,7 @@ add_action( 'wp_enqueue_scripts', 'coulrophobia_scripts' );
 //Includes everything necessary for afc maps to work
 function include_afc_maps() {
 
-	wp_enqueue_script('gmaps-jsafc-js', 'https://maps.googleapis.com/maps/api/js?v=3.exp', true);
+	wp_enqueue_script('gmaps-jsafc-js', 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAHbiKNHebsVRGvFDDG8ws6xZCVkD64xG8', true);
 	wp_enqueue_script('afc-js', get_template_directory_uri() . '/js/afc-map.js', ['jquery', 'coulrophobia.min.js'], '', true);
 
 	wp_enqueue_style('afc-css', get_template_directory_uri() . '/css/afc-map.css');
