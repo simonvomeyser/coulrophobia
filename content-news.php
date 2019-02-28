@@ -14,7 +14,7 @@ Template for a single news item
 				</span>
 			</div>
 			<h3 class="no-top-margin">
-				<a href="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post_id ))?>" data-lightbox="<?php the_title(); ?>" data-title="<?php the_title(); ?>">
+				<a href="<?php echo the_permalink() ?>">
 					<?php the_title() ?>
 				</a>
 			</h3>
