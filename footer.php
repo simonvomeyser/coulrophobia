@@ -48,7 +48,7 @@
             <ul>
                 <li><a href="https://www.instagram.com/cyrcusofficial/" target="_blank"  title="CYRCUS Official Instagram"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://www.facebook.com/CyrcusOfficial" target="_blank" title="CYRCUS Official Facebook"><i class="fa fa-facebook-square"></i></a></li>
-                <li><a href="https://www.youtube.com/user/BloodSweatVideos" target="_blank"  title="YouTube Videos">><i class="fa fa-youtube-square"></i></a></li>
+                <li><a href="https://www.youtube.com/user/BloodSweatVideos" target="_blank"  title="YouTube Videos"><i class="fa fa-youtube-square"></i></a></li>
             </ul>
         </i>
 
